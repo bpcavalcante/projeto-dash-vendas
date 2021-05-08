@@ -20,7 +20,16 @@ type ChartData = {
 function BarChart() {
 
     const [chartData, setChartData] = useState<ChartData>({
-       );
+        labels: {
+            categories: []
+        },
+        series: [
+            {
+                name: "",
+                data: []
+            }
+        ]
+    });
 
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/success-by-seller`).then(response => {
