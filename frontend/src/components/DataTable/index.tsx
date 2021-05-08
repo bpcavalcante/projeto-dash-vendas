@@ -5,7 +5,7 @@ import { SalePage } from "types/sales";
 import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
-function DataTable() {
+const DataTable = () => {
 
     const[activePage, setActivePage] = useState(0);
 
@@ -52,7 +52,6 @@ function DataTable() {
                             </tr>
 
                         ))}
-
                     </tbody>
                 </table>
             </div>
